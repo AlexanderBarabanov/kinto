@@ -33,6 +33,7 @@ jobs:
             console.log('Comment Time:', commentTime);
             console.log('PR Time:', prTime);
             console.log('SHA that will be used:', response.data.head.sha);
+            console.log('PR Data:', JSON.stringify(response.data, null, 2));
 
             core.setOutput('head', response.data.head.sha)
 
